@@ -373,10 +373,10 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm Book View Controller-->
         <scene sceneID="Fad-lE-Hjh">
             <objects>
-                <viewController id="YhM-94-eOn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmBookVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YhM-94-eOn" customClass="ConfirmBookViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Huw-hB-REx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -480,6 +480,9 @@
                                                 <state key="normal" title="芳名録を作成する">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toWriteBookVC:" destination="YhM-94-eOn" eventType="touchUpInside" id="ph1-T3-XtN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -517,6 +520,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EeD-2W-AL4"/>
+                    <connections>
+                        <outlet property="ChiefMournerNameLabel" destination="ylK-wc-4U8" id="9vI-1A-Xv4"/>
+                        <outlet property="deceasedNameLabel" destination="CBt-mK-joR" id="9Rz-fd-tm6"/>
+                        <outlet property="descriptionTextView" destination="7QH-24-vfF" id="m9x-4t-aOD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rzi-TV-dUF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

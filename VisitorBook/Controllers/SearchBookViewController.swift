@@ -40,7 +40,7 @@ extension SearchBookViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let passwordVC = self.storyboard?.instantiateViewController(withIdentifier: "PasswordViewController") as? PasswordViewController else {
+        guard let passwordVC = self.storyboard?.instantiateViewController(withIdentifier: "PasswordVC") as? PasswordViewController else {
             fatalError("PasswordViewController is not found")
         }
         
