@@ -1,0 +1,25 @@
+# Swiftlint Rules
+
+# 無効にするルール
+disabled_rules:
+  # 一行の文字数が多い
+  - line_length
+  # 関数の行数が多い
+  - function_body_length
+  # 関数の複雑度が大きい
+  - cyclomatic_complexity
+  # ファイルの行数が多い
+  - file_length # ファイルの行数が多い
+  # クラスの行数が多い
+  - type_body_length # 
+
+# 有効にするルール(標準ルールに追加して明示的に有効にする)
+opt_in_rules:
+  # 不要なbreak文がある
+  - unneeded_break_in_switch
+  # 強制キャストがある 
+  - force_cast
+  # +=などを使っていない
+  - shorthand_operator
+  # ToDoが残っている
+  - todo
