@@ -231,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="2794" y="119"/>
         </scene>
-        <!--View Controller-->
+        <!--Password View Controller-->
         <scene sceneID="Oyo-IL-Wm8">
             <objects>
-                <viewController id="RXz-cW-zlw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PasswordVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RXz-cW-zlw" customClass="PasswordViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9G4-Nv-jOQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,6 +269,9 @@
                                 <state key="normal" title="芳名録を記入する">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="passwordDoneButton:" destination="RXz-cW-zlw" eventType="touchUpInside" id="TdY-40-99U"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yNc-iR-7Wl"/>
@@ -284,6 +287,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X9B-uQ-qEs"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Hqq-ve-0Gs" id="o50-zg-4Gp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUM-JT-lri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

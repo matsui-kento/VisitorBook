@@ -14,6 +14,7 @@
 		0EF08BDE272276BE00E3898D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF08BDC272276BE00E3898D /* LaunchScreen.storyboard */; };
 		0EF08BE927244BE600E3898D /* SearchBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BE827244BE600E3898D /* SearchBookViewController.swift */; };
 		0EF08BEC27244CBB00E3898D /* VisiterBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BEB27244CBB00E3898D /* VisiterBookTableViewCell.swift */; };
+		0EF08BEE27244F0900E3898D /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BED27244F0900E3898D /* PasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0EF08BDF272276BE00E3898D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF08BE827244BE600E3898D /* SearchBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookViewController.swift; sourceTree = "<group>"; };
 		0EF08BEB27244CBB00E3898D /* VisiterBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisiterBookTableViewCell.swift; sourceTree = "<group>"; };
+		0EF08BED27244F0900E3898D /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				0EF08BE827244BE600E3898D /* SearchBookViewController.swift */,
+				0EF08BED27244F0900E3898D /* PasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF08BD2272276BD00E3898D /* AppDelegate.swift in Sources */,
+				0EF08BEE27244F0900E3898D /* PasswordViewController.swift in Sources */,
 				0EF08BEC27244CBB00E3898D /* VisiterBookTableViewCell.swift in Sources */,
 				0EF08BD4272276BD00E3898D /* SceneDelegate.swift in Sources */,
 				0EF08BE927244BE600E3898D /* SearchBookViewController.swift in Sources */,
