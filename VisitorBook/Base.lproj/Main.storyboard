@@ -530,10 +530,10 @@
             </objects>
             <point key="canvasLocation" x="3651" y="-619"/>
         </scene>
-        <!--View Controller-->
+        <!--Write Book View Controller-->
         <scene sceneID="Xi0-e4-99h">
             <objects>
-                <viewController id="Rt9-4f-Wes" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WriteBookVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rt9-4f-Wes" customClass="WriteBookViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r6h-HW-utm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -696,6 +696,9 @@
                                         <state key="normal" title="完了">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="writeDoneButton:" destination="Rt9-4f-Wes" eventType="touchUpInside" id="SCL-7z-Uni"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -722,6 +725,13 @@
                             <constraint firstAttribute="bottom" secondItem="4qs-p9-1dP" secondAttribute="bottom" id="Hhm-s5-1nN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextView" destination="Hf9-6d-thY" id="SjU-5g-7tE"/>
+                        <outlet property="companyLabel" destination="KB1-ss-Pq5" id="1Ve-DX-AjY"/>
+                        <outlet property="nameLabel" destination="Pcb-5h-Jxj" id="s8p-Xi-dQl"/>
+                        <outlet property="phoneLabel" destination="uUX-Av-0fa" id="4Jj-VU-u9j"/>
+                        <outlet property="relationshipLabel" destination="i66-Vj-YAp" id="bbw-cL-3Rr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUI-fw-BmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
