@@ -38,9 +38,9 @@ extension ConfirmAttendeeViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        guard let detailAttendeeVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailAttendeeVC") as? SelectOptionViewController else {
-//            fatalError("SelectOptionViewController is not found")
-//        }
-//        self.navigationController?.pushViewController(selectOptionVC, animated: true)
+        guard let detailAttendeeVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailAttendeeVC") as? DetailAttendeeViewController else {
+            fatalError("DetailAttendeeViewController is not found")
+        }
+        self.navigationController?.pushViewController(detailAttendeeVC, animated: true)
     }
 }

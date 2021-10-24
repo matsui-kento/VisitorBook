@@ -1147,20 +1147,195 @@
             </objects>
             <point key="canvasLocation" x="2794" y="1564"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Attendee View Controller-->
         <scene sceneID="wKB-nJ-o6d">
             <objects>
-                <viewController id="hSz-hE-MMr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailAttendeeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hSz-hE-MMr" customClass="DetailAttendeeViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UFW-Nn-HGF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-75-2AZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMR-0f-U2R">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="qKB-T3-yvl">
+                                                <rect key="frame" x="20" y="60" width="374" height="486"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7X4-YT-dqG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="49"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご芳名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVH-p4-4VO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大阪太郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITA-2O-eJD">
+                                                                <rect key="frame" x="0.0" y="28.5" width="69.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ITA-2O-eJD" firstAttribute="leading" secondItem="7X4-YT-dqG" secondAttribute="leading" id="095-d6-ONS"/>
+                                                            <constraint firstAttribute="trailing" secondItem="dVH-p4-4VO" secondAttribute="trailing" id="HIZ-ag-YEZ"/>
+                                                            <constraint firstItem="dVH-p4-4VO" firstAttribute="leading" secondItem="7X4-YT-dqG" secondAttribute="leading" id="LUS-WF-dG6"/>
+                                                            <constraint firstItem="dVH-p4-4VO" firstAttribute="leading" secondItem="7X4-YT-dqG" secondAttribute="leading" id="h3V-FL-0tJ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ITA-2O-eJD" secondAttribute="trailing" id="sC5-4T-u82"/>
+                                                            <constraint firstAttribute="trailing" secondItem="dVH-p4-4VO" secondAttribute="trailing" id="vMu-lj-kDb"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-Wp-awD">
+                                                        <rect key="frame" x="0.0" y="82" width="130" height="49"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話番号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLO-57-zb2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="090-1234-5678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwr-H4-0Jr">
+                                                                <rect key="frame" x="0.0" y="28.5" width="130" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="gwr-H4-0Jr" secondAttribute="trailing" id="Aad-vC-QW8"/>
+                                                            <constraint firstAttribute="trailing" secondItem="SLO-57-zb2" secondAttribute="trailing" id="JOw-Kg-uL5"/>
+                                                            <constraint firstAttribute="trailing" secondItem="SLO-57-zb2" secondAttribute="trailing" id="K5w-Bc-9OD"/>
+                                                            <constraint firstItem="gwr-H4-0Jr" firstAttribute="leading" secondItem="Bfl-Wp-awD" secondAttribute="leading" id="LQ4-6D-Ge4"/>
+                                                            <constraint firstItem="SLO-57-zb2" firstAttribute="leading" secondItem="Bfl-Wp-awD" secondAttribute="leading" id="ahl-Su-EUw"/>
+                                                            <constraint firstItem="SLO-57-zb2" firstAttribute="leading" secondItem="Bfl-Wp-awD" secondAttribute="leading" id="xne-aY-46g"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NkI-is-duo">
+                                                        <rect key="frame" x="0.0" y="164" width="139" height="49"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会社名・団体名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZd-1w-2WM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="139" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大阪太郎株式会社" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82W-P0-czs">
+                                                                <rect key="frame" x="0.0" y="28.5" width="139" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="82W-P0-czs" secondAttribute="trailing" id="5mb-QQ-CMd"/>
+                                                            <constraint firstItem="82W-P0-czs" firstAttribute="leading" secondItem="NkI-is-duo" secondAttribute="leading" id="Ib0-PE-yuM"/>
+                                                            <constraint firstItem="ZZd-1w-2WM" firstAttribute="leading" secondItem="NkI-is-duo" secondAttribute="leading" id="SrJ-gS-A89"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZZd-1w-2WM" secondAttribute="trailing" id="Y7N-lg-7Ms"/>
+                                                            <constraint firstItem="ZZd-1w-2WM" firstAttribute="leading" secondItem="NkI-is-duo" secondAttribute="leading" id="atN-cH-Dc2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZZd-1w-2WM" secondAttribute="trailing" id="klA-JC-AzV"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xGH-oH-8pn">
+                                                        <rect key="frame" x="0.0" y="246" width="52" height="49"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご関係" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHo-uU-29h">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="友人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOF-ea-ghe">
+                                                                <rect key="frame" x="0.0" y="28.5" width="52" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="UHo-uU-29h" secondAttribute="trailing" id="DcR-an-Aoi"/>
+                                                            <constraint firstItem="eOF-ea-ghe" firstAttribute="leading" secondItem="xGH-oH-8pn" secondAttribute="leading" id="IfH-Eb-WkH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UHo-uU-29h" secondAttribute="trailing" id="JKb-dE-FgL"/>
+                                                            <constraint firstItem="UHo-uU-29h" firstAttribute="leading" secondItem="xGH-oH-8pn" secondAttribute="leading" id="irf-Y3-Hq4"/>
+                                                            <constraint firstItem="UHo-uU-29h" firstAttribute="leading" secondItem="xGH-oH-8pn" secondAttribute="leading" id="mlY-9c-Xdg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="eOF-ea-ghe" secondAttribute="trailing" id="wmc-Ct-7Um"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y3S-Ca-w4A">
+                                                        <rect key="frame" x="0.0" y="328" width="374" height="158"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIr-bL-XzA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayI-ZL-PfA">
+                                                                <rect key="frame" x="0.0" y="28.5" width="374" height="129.5"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ayI-ZL-PfA" firstAttribute="leading" secondItem="y3S-Ca-w4A" secondAttribute="leading" id="7Lw-q0-2Zg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ayI-ZL-PfA" secondAttribute="trailing" id="CTz-MT-2he"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bIr-bL-XzA" secondAttribute="trailing" id="IuA-xu-d0V"/>
+                                                            <constraint firstItem="bIr-bL-XzA" firstAttribute="leading" secondItem="y3S-Ca-w4A" secondAttribute="leading" id="MLG-G9-W4C"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="y3S-Ca-w4A" secondAttribute="trailing" id="HeB-Kc-yVf"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="qKB-T3-yvl" secondAttribute="bottom" constant="350" id="O1Z-g5-KG8"/>
+                                            <constraint firstItem="qKB-T3-yvl" firstAttribute="leading" secondItem="qMR-0f-U2R" secondAttribute="leading" constant="20" id="mID-YG-f8M"/>
+                                            <constraint firstItem="qKB-T3-yvl" firstAttribute="centerX" secondItem="qMR-0f-U2R" secondAttribute="centerX" id="vcw-Mb-98L"/>
+                                            <constraint firstItem="qKB-T3-yvl" firstAttribute="top" secondItem="qMR-0f-U2R" secondAttribute="top" constant="60" id="z0y-9V-STX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qMR-0f-U2R" firstAttribute="centerX" secondItem="OZj-75-2AZ" secondAttribute="centerX" id="4BQ-qt-Xva"/>
+                                    <constraint firstAttribute="bottom" secondItem="qMR-0f-U2R" secondAttribute="bottom" id="6Js-DT-bvV"/>
+                                    <constraint firstItem="qMR-0f-U2R" firstAttribute="bottom" secondItem="ICN-qr-qTn" secondAttribute="bottom" id="LT7-cg-au0"/>
+                                    <constraint firstAttribute="trailing" secondItem="qMR-0f-U2R" secondAttribute="trailing" id="mSk-D4-Lxr"/>
+                                    <constraint firstItem="qMR-0f-U2R" firstAttribute="top" secondItem="OZj-75-2AZ" secondAttribute="top" id="mY5-Fz-NcI"/>
+                                    <constraint firstItem="qMR-0f-U2R" firstAttribute="leading" secondItem="OZj-75-2AZ" secondAttribute="leading" id="zUY-jG-lS9"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="YTY-xE-y4t"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ICN-qr-qTn"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GlP-OI-Mm3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OZj-75-2AZ" firstAttribute="top" secondItem="UFW-Nn-HGF" secondAttribute="top" id="5hK-pp-R4F"/>
+                            <constraint firstAttribute="bottom" secondItem="OZj-75-2AZ" secondAttribute="bottom" id="OhC-e2-A1G"/>
+                            <constraint firstItem="OZj-75-2AZ" firstAttribute="leading" secondItem="GlP-OI-Mm3" secondAttribute="leading" id="azH-zg-OHp"/>
+                            <constraint firstItem="OZj-75-2AZ" firstAttribute="trailing" secondItem="GlP-OI-Mm3" secondAttribute="trailing" id="gxw-j7-VBn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextView" destination="ayI-ZL-PfA" id="Qpp-5v-x0T"/>
+                        <outlet property="companyLabel" destination="82W-P0-czs" id="VRA-YT-NcR"/>
+                        <outlet property="nameLabel" destination="ITA-2O-eJD" id="T0E-t4-TRg"/>
+                        <outlet property="phoneLabel" destination="gwr-H4-0Jr" id="hlz-tD-GhT"/>
+                        <outlet property="relationshipLabel" destination="eOF-ea-ghe" id="eHK-e1-TJR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5H-Cg-7gO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3652" y="1564"/>
+            <point key="canvasLocation" x="4531.884057971015" y="851.78571428571422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Aq9-vH-FlX">
