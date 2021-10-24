@@ -750,7 +750,7 @@
         <!--設定-->
         <scene sceneID="kJh-sY-AYj">
             <objects>
-                <viewController id="3Rq-05-XUD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Rq-05-XUD" customClass="SettingViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Box-yd-HQm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -767,6 +767,9 @@
                                         <state key="normal" title="ログアウト">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="toLoginVCAfterLogout:" destination="3Rq-05-XUD" eventType="touchUpInside" id="lIb-ND-h1X"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnH-42-SY4">
                                         <rect key="frame" x="0.0" y="60" width="374" height="40"/>
@@ -777,6 +780,9 @@
                                         <state key="normal" title="ログイン">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="toLoginVC:" destination="3Rq-05-XUD" eventType="touchUpInside" id="80S-4r-yWp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4E-Dq-fsp">
                                         <rect key="frame" x="0.0" y="120" width="374" height="40"/>
@@ -788,6 +794,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="toPrivacyPolicyVC:" destination="3Rq-05-XUD" eventType="touchUpInside" id="3mY-wc-flt"/>
                                             <segue destination="32Y-Hh-wFc" kind="show" id="A2r-vv-mdk"/>
                                         </connections>
                                     </button>

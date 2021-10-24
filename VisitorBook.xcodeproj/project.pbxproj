@@ -23,6 +23,7 @@
 		0EF08BFB2725156A00E3898D /* SelectOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BFA2725156A00E3898D /* SelectOptionViewController.swift */; };
 		0EF08BFD2725170D00E3898D /* ConfirmAttendeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BFC2725170D00E3898D /* ConfirmAttendeeViewController.swift */; };
 		0EF08BFF27251C5D00E3898D /* DetailAttendeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BFE27251C5D00E3898D /* DetailAttendeeViewController.swift */; };
+		0EF08C0127251F1E00E3898D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08C0027251F1E00E3898D /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		0EF08BFA2725156A00E3898D /* SelectOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionViewController.swift; sourceTree = "<group>"; };
 		0EF08BFC2725170D00E3898D /* ConfirmAttendeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAttendeeViewController.swift; sourceTree = "<group>"; };
 		0EF08BFE27251C5D00E3898D /* DetailAttendeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAttendeeViewController.swift; sourceTree = "<group>"; };
+		0EF08C0027251F1E00E3898D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0EF08BFA2725156A00E3898D /* SelectOptionViewController.swift */,
 				0EF08BFC2725170D00E3898D /* ConfirmAttendeeViewController.swift */,
 				0EF08BFE27251C5D00E3898D /* DetailAttendeeViewController.swift */,
+				0EF08C0027251F1E00E3898D /* SettingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				0EF08BF72725118E00E3898D /* CreateBookFormViewController.swift in Sources */,
 				0EF08BEE27244F0900E3898D /* PasswordViewController.swift in Sources */,
 				0EF08BF3272455AC00E3898D /* WriteBookViewController.swift in Sources */,
+				0EF08C0127251F1E00E3898D /* SettingViewController.swift in Sources */,
 				0EF08BEC27244CBB00E3898D /* VisiterBookTableViewCell.swift in Sources */,
 				0EF08BD4272276BD00E3898D /* SceneDelegate.swift in Sources */,
 				0EF08BF12724543900E3898D /* ConfirmBookViewController.swift in Sources */,
