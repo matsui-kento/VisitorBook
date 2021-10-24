@@ -839,10 +839,10 @@
             </objects>
             <point key="canvasLocation" x="1958" y="2310"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="EQi-as-dY5">
             <objects>
-                <viewController id="UTm-TJ-8et" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UTm-TJ-8et" customClass="RegisterViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yWp-z9-SE7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
