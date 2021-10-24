@@ -18,6 +18,7 @@
 		0EF08BF12724543900E3898D /* ConfirmBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BF02724543900E3898D /* ConfirmBookViewController.swift */; };
 		0EF08BF3272455AC00E3898D /* WriteBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BF2272455AC00E3898D /* WriteBookViewController.swift */; };
 		0EF08BF5272510E500E3898D /* CreateDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BF4272510E500E3898D /* CreateDescriptionViewController.swift */; };
+		0EF08BF72725118E00E3898D /* CreateBookFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BF62725118E00E3898D /* CreateBookFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0EF08BF02724543900E3898D /* ConfirmBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookViewController.swift; sourceTree = "<group>"; };
 		0EF08BF2272455AC00E3898D /* WriteBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteBookViewController.swift; sourceTree = "<group>"; };
 		0EF08BF4272510E500E3898D /* CreateDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDescriptionViewController.swift; sourceTree = "<group>"; };
+		0EF08BF62725118E00E3898D /* CreateBookFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				0EF08BF02724543900E3898D /* ConfirmBookViewController.swift */,
 				0EF08BF2272455AC00E3898D /* WriteBookViewController.swift */,
 				0EF08BF4272510E500E3898D /* CreateDescriptionViewController.swift */,
+				0EF08BF62725118E00E3898D /* CreateBookFormViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF08BD2272276BD00E3898D /* AppDelegate.swift in Sources */,
+				0EF08BF72725118E00E3898D /* CreateBookFormViewController.swift in Sources */,
 				0EF08BEE27244F0900E3898D /* PasswordViewController.swift in Sources */,
 				0EF08BF3272455AC00E3898D /* WriteBookViewController.swift in Sources */,
 				0EF08BEC27244CBB00E3898D /* VisiterBookTableViewCell.swift in Sources */,
