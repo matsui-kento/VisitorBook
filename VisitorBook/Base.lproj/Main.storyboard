@@ -900,10 +900,10 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="851.78571428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Option View Controller-->
         <scene sceneID="KmU-s5-c1f">
             <objects>
-                <viewController id="CZo-nO-LNi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectOptionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CZo-nO-LNi" customClass="SelectOptionViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Amt-yW-g8t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1026,6 +1026,9 @@
                                                         <state key="normal" title="芳名録を削除する">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="deleteBook:" destination="CZo-nO-LNi" eventType="touchUpInside" id="LWv-rc-4bb"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -1063,6 +1066,11 @@
                             <constraint firstItem="FkK-iO-Lj1" firstAttribute="top" secondItem="Amt-yW-g8t" secondAttribute="top" id="gGt-a7-9hL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chiefMournerNameLabel" destination="auv-QM-JKl" id="dHD-gc-YLs"/>
+                        <outlet property="deceasedNameLabel" destination="mTb-BA-Lu8" id="4Uy-6Q-BNR"/>
+                        <outlet property="decriptionTextView" destination="RXl-Aw-4Ru" id="19p-v7-Em1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4m-Vs-kRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

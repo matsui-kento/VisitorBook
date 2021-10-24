@@ -38,10 +38,9 @@ extension BookListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        guard let passwordVC = self.storyboard?.instantiateViewController(withIdentifier: "PasswordVC") as? PasswordViewController else {
-//            fatalError("PasswordViewController is not found")
-//        }
-//
-//        self.present(passwordVC, animated: true, completion: nil)
+        guard let selectOptionVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectOptionVC") as? SelectOptionViewController else {
+            fatalError("SelectOptionViewController is not found")
+        }
+        self.navigationController?.pushViewController(selectOptionVC, animated: true)
     }
 }
