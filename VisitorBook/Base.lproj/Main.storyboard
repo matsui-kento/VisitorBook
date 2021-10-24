@@ -298,7 +298,7 @@
         <!--芳名録を作成する-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateDescriptionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CreateDescriptionViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -330,6 +330,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="toCreateBookFormVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jq6-0s-1be"/>
                                                     <segue destination="9kG-2b-2Am" kind="show" id="iOE-ov-DiB"/>
                                                 </connections>
                                             </button>

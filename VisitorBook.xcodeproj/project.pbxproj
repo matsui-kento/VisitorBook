@@ -17,6 +17,7 @@
 		0EF08BEE27244F0900E3898D /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BED27244F0900E3898D /* PasswordViewController.swift */; };
 		0EF08BF12724543900E3898D /* ConfirmBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BF02724543900E3898D /* ConfirmBookViewController.swift */; };
 		0EF08BF3272455AC00E3898D /* WriteBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BF2272455AC00E3898D /* WriteBookViewController.swift */; };
+		0EF08BF5272510E500E3898D /* CreateDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BF4272510E500E3898D /* CreateDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0EF08BED27244F0900E3898D /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		0EF08BF02724543900E3898D /* ConfirmBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookViewController.swift; sourceTree = "<group>"; };
 		0EF08BF2272455AC00E3898D /* WriteBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteBookViewController.swift; sourceTree = "<group>"; };
+		0EF08BF4272510E500E3898D /* CreateDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				0EF08BED27244F0900E3898D /* PasswordViewController.swift */,
 				0EF08BF02724543900E3898D /* ConfirmBookViewController.swift */,
 				0EF08BF2272455AC00E3898D /* WriteBookViewController.swift */,
+				0EF08BF4272510E500E3898D /* CreateDescriptionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				0EF08BD4272276BD00E3898D /* SceneDelegate.swift in Sources */,
 				0EF08BF12724543900E3898D /* ConfirmBookViewController.swift in Sources */,
 				0EF08BE927244BE600E3898D /* SearchBookViewController.swift in Sources */,
+				0EF08BF5272510E500E3898D /* CreateDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
