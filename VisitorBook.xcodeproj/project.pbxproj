@@ -26,9 +26,12 @@
 		0EF08C0127251F1E00E3898D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08C0027251F1E00E3898D /* SettingViewController.swift */; };
 		0EF08C0327251FDD00E3898D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08C0227251FDD00E3898D /* LoginViewController.swift */; };
 		0EF08C05272533D600E3898D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08C04272533D600E3898D /* RegisterViewController.swift */; };
+		0EF08C07272535B400E3898D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EF08C06272535B400E3898D /* GoogleService-Info.plist */; };
+		968D1A7A5BFB864FA71E9EC3 /* Pods_VisitorBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AAFFA25CAE0F3EA2E73AE8 /* Pods_VisitorBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EC07A3783380B6D80BD47CD /* Pods-VisitorBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisitorBook.debug.xcconfig"; path = "Target Support Files/Pods-VisitorBook/Pods-VisitorBook.debug.xcconfig"; sourceTree = "<group>"; };
 		0EF08BCE272276BD00E3898D /* VisitorBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitorBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF08BD1272276BD00E3898D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF08BD3272276BD00E3898D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +53,9 @@
 		0EF08C0027251F1E00E3898D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		0EF08C0227251FDD00E3898D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0EF08C04272533D600E3898D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0EF08C06272535B400E3898D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DEA59FCA27CD69E2B72B890E /* Pods-VisitorBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisitorBook.release.xcconfig"; path = "Target Support Files/Pods-VisitorBook/Pods-VisitorBook.release.xcconfig"; sourceTree = "<group>"; };
+		E2AAFFA25CAE0F3EA2E73AE8 /* Pods_VisitorBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisitorBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968D1A7A5BFB864FA71E9EC3 /* Pods_VisitorBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +75,8 @@
 			children = (
 				0EF08BD0272276BD00E3898D /* VisitorBook */,
 				0EF08BCF272276BD00E3898D /* Products */,
+				EA114F518DE4A35941CD6B91 /* Pods */,
+				D2C023F3992596CA609AB4FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +101,7 @@
 				0EF08BDA272276BE00E3898D /* Assets.xcassets */,
 				0EF08BDC272276BE00E3898D /* LaunchScreen.storyboard */,
 				0EF08BDF272276BE00E3898D /* Info.plist */,
+				0EF08C06272535B400E3898D /* GoogleService-Info.plist */,
 			);
 			path = VisitorBook;
 			sourceTree = "<group>";
@@ -138,6 +148,24 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		D2C023F3992596CA609AB4FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2AAFFA25CAE0F3EA2E73AE8 /* Pods_VisitorBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA114F518DE4A35941CD6B91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EC07A3783380B6D80BD47CD /* Pods-VisitorBook.debug.xcconfig */,
+				DEA59FCA27CD69E2B72B890E /* Pods-VisitorBook.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,10 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EF08BE2272276BE00E3898D /* Build configuration list for PBXNativeTarget "VisitorBook" */;
 			buildPhases = (
+				5D1BF7F0FFED9CB86E471CF4 /* [CP] Check Pods Manifest.lock */,
 				0EF08BCA272276BD00E3898D /* Sources */,
 				0EF08BCB272276BD00E3898D /* Frameworks */,
 				0EF08BCC272276BD00E3898D /* Resources */,
 				0EF08BEF272450C800E3898D /* Run SwiftLint */,
+				9D9CB4C86C7BF1E778C086D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF08BDE272276BE00E3898D /* LaunchScreen.storyboard in Resources */,
+				0EF08C07272535B400E3898D /* GoogleService-Info.plist in Resources */,
 				0EF08BDB272276BE00E3898D /* Assets.xcassets in Resources */,
 				0EF08BD9272276BD00E3898D /* Main.storyboard in Resources */,
 			);
@@ -222,6 +253,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		5D1BF7F0FFED9CB86E471CF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VisitorBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D9CB4C86C7BF1E778C086D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VisitorBook/Pods-VisitorBook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VisitorBook/Pods-VisitorBook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VisitorBook/Pods-VisitorBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -389,6 +459,7 @@
 		};
 		0EF08BE3272276BE00E3898D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EC07A3783380B6D80BD47CD /* Pods-VisitorBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -408,6 +479,7 @@
 		};
 		0EF08BE4272276BE00E3898D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEA59FCA27CD69E2B72B890E /* Pods-VisitorBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
