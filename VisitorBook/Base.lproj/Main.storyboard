@@ -1016,6 +1016,9 @@
                                                         <state key="normal" title="参列者を確認する">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="toConfirmAttendeeVC:" destination="CZo-nO-LNi" eventType="touchUpInside" id="tzn-Vm-6ZB"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ls-dk-6Uh">
                                                         <rect key="frame" x="0.0" y="48" width="354" height="40"/>
@@ -1076,10 +1079,10 @@
             </objects>
             <point key="canvasLocation" x="2792.753623188406" y="851.78571428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm Attendee View Controller-->
         <scene sceneID="B36-pb-aeu">
             <objects>
-                <viewController id="FYS-QS-HNh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmAttendeeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FYS-QS-HNh" customClass="ConfirmAttendeeViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="axY-0R-jGh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1089,13 +1092,30 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="gSX-bZ-S4j">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VisiterBookTableViewCell" rowHeight="60" id="gSX-bZ-S4j" customClass="VisiterBookTableViewCell" customModule="VisitorBook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gSX-bZ-S4j" id="oQI-au-jD4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大阪太郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Fca-Bt-zHe">
+                                                    <rect key="frame" x="20" y="11" width="374" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Fca-Bt-zHe" secondAttribute="bottom" id="Mhg-BU-EUY"/>
+                                                <constraint firstItem="Fca-Bt-zHe" firstAttribute="leading" secondItem="oQI-au-jD4" secondAttribute="leadingMargin" id="ija-u0-twu"/>
+                                                <constraint firstItem="Fca-Bt-zHe" firstAttribute="top" secondItem="oQI-au-jD4" secondAttribute="topMargin" id="xPS-m8-PRN"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Fca-Bt-zHe" secondAttribute="trailing" id="yXh-PK-crt"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="Fca-Bt-zHe" id="O6C-lZ-Qhv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1103,6 +1123,9 @@
                         <viewLayoutGuide key="safeArea" id="gGB-hR-hXJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="bgn-PN-iVc" id="0u6-JO-COm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLb-Qf-Nwj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -17,6 +17,12 @@ class SelectOptionViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    @IBAction func toConfirmAttendeeVC(_ sender: Any) {
+        guard let confirmAttendeeVC = self.storyboard?.instantiateViewController(withIdentifier: "ConfirmAttendeeVC") as? ConfirmAttendeeViewController else {
+            fatalError("ConfirmAttendeeViewController is not found")
+        }
+        self.navigationController?.pushViewController(confirmAttendeeVC, animated: true)
+    }
     
     @IBAction func deleteBook(_ sender: Any) {
     }
