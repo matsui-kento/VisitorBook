@@ -11,7 +11,7 @@
         <!--芳名録を検索する-->
         <scene sceneID="Zd4-Pd-OFA">
             <objects>
-                <viewController id="evE-J1-vsu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchBookVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="evE-J1-vsu" customClass="SearchBookViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iHs-4v-QEU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="dDk-6c-8Fh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VisiterBookTableViewCell" rowHeight="60" id="dDk-6c-8Fh" customClass="VisiterBookTableViewCell" customModule="VisitorBook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dDk-6c-8Fh" id="Zfe-jU-rt0">
@@ -42,6 +42,9 @@
                                                 <constraint firstItem="i0l-BN-kUc" firstAttribute="leading" secondItem="Zfe-jU-rt0" secondAttribute="leadingMargin" id="IjU-gT-Xo6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="i0l-BN-kUc" id="qAT-3i-cIJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -55,15 +58,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="芳名録を検索する" id="4Lq-e7-Qea"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Xg8-eI-Tj7" id="fs4-jE-INK"/>
+                        <outlet property="tableView" destination="74A-5g-fti" id="T9N-V1-bXl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5e-AR-MQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="-619.41964285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Book Form View Controller-->
         <scene sceneID="cwL-2S-1E8">
             <objects>
-                <viewController id="9kG-2b-2Am" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateBookFormVC" id="9kG-2b-2Am" customClass="CreateBookFormViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M8r-lk-k5J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +140,7 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JGi-dd-cIv">
                                                                 <rect key="frame" x="0.0" y="28.5" width="374" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                         <constraints>
@@ -155,7 +162,7 @@
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jfd-Cf-5tx">
                                                                 <rect key="frame" x="0.0" y="28.5" width="374" height="74.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -182,6 +189,9 @@
                                                 <state key="normal" title="芳名録を作成する">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="createDone:" destination="9kG-2b-2Am" eventType="touchUpInside" id="aTO-zX-Rdw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -219,15 +229,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O2I-iU-29v"/>
+                    <connections>
+                        <outlet property="chiefMournerNameTextField" destination="MZ0-bH-Pi1" id="fkD-2k-XWj"/>
+                        <outlet property="deceasedNameTextField" destination="V4h-Bu-zeU" id="MGc-jD-L78"/>
+                        <outlet property="descriptionTextView" destination="Jfd-Cf-5tx" id="FaB-C7-96V"/>
+                        <outlet property="passwordTextField" destination="JGi-dd-cIv" id="bnI-on-2M8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWO-KV-GK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2794" y="119"/>
         </scene>
-        <!--View Controller-->
+        <!--Password View Controller-->
         <scene sceneID="Oyo-IL-Wm8">
             <objects>
-                <viewController id="RXz-cW-zlw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PasswordVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RXz-cW-zlw" customClass="PasswordViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9G4-Nv-jOQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,7 +261,7 @@
                                         <rect key="frame" x="0.0" y="54" width="334" height="34"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -262,6 +278,9 @@
                                 <state key="normal" title="芳名録を記入する">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="passwordDoneButton:" destination="RXz-cW-zlw" eventType="touchUpInside" id="TdY-40-99U"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yNc-iR-7Wl"/>
@@ -277,6 +296,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X9B-uQ-qEs"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Hqq-ve-0Gs" id="o50-zg-4Gp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUM-JT-lri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -285,7 +307,7 @@
         <!--芳名録を作成する-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateDescriptionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CreateDescriptionViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,6 +339,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="toCreateBookFormVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jq6-0s-1be"/>
                                                     <segue destination="9kG-2b-2Am" kind="show" id="iOE-ov-DiB"/>
                                                 </connections>
                                             </button>
@@ -360,10 +383,10 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm Book View Controller-->
         <scene sceneID="Fad-lE-Hjh">
             <objects>
-                <viewController id="YhM-94-eOn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmBookVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YhM-94-eOn" customClass="ConfirmBookViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Huw-hB-REx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -439,7 +462,7 @@
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QH-24-vfF">
                                                                 <rect key="frame" x="0.0" y="28.5" width="374" height="178.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -467,6 +490,9 @@
                                                 <state key="normal" title="芳名録を作成する">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toWriteBookVC:" destination="YhM-94-eOn" eventType="touchUpInside" id="ph1-T3-XtN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -504,15 +530,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EeD-2W-AL4"/>
+                    <connections>
+                        <outlet property="ChiefMournerNameLabel" destination="ylK-wc-4U8" id="9vI-1A-Xv4"/>
+                        <outlet property="deceasedNameLabel" destination="CBt-mK-joR" id="9Rz-fd-tm6"/>
+                        <outlet property="descriptionTextView" destination="7QH-24-vfF" id="m9x-4t-aOD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rzi-TV-dUF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3651" y="-619"/>
         </scene>
-        <!--View Controller-->
+        <!--Write Book View Controller-->
         <scene sceneID="Xi0-e4-99h">
             <objects>
-                <viewController id="Rt9-4f-Wes" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WriteBookVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rt9-4f-Wes" customClass="WriteBookViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r6h-HW-utm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -562,7 +593,7 @@
                                                                 <rect key="frame" x="0.0" y="28.5" width="374" height="34"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                         <constraints>
@@ -630,7 +661,7 @@
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hf9-6d-thY">
                                                                 <rect key="frame" x="0.0" y="28.5" width="374" height="74.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -675,6 +706,9 @@
                                         <state key="normal" title="完了">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="writeDoneButton:" destination="Rt9-4f-Wes" eventType="touchUpInside" id="SCL-7z-Uni"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -701,6 +735,13 @@
                             <constraint firstAttribute="bottom" secondItem="4qs-p9-1dP" secondAttribute="bottom" id="Hhm-s5-1nN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextView" destination="Hf9-6d-thY" id="SjU-5g-7tE"/>
+                        <outlet property="companyLabel" destination="KB1-ss-Pq5" id="1Ve-DX-AjY"/>
+                        <outlet property="nameLabel" destination="Pcb-5h-Jxj" id="s8p-Xi-dQl"/>
+                        <outlet property="phoneLabel" destination="uUX-Av-0fa" id="4Jj-VU-u9j"/>
+                        <outlet property="relationshipLabel" destination="i66-Vj-YAp" id="bbw-cL-3Rr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUI-fw-BmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -709,7 +750,7 @@
         <!--設定-->
         <scene sceneID="kJh-sY-AYj">
             <objects>
-                <viewController id="3Rq-05-XUD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Rq-05-XUD" customClass="SettingViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Box-yd-HQm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -726,6 +767,9 @@
                                         <state key="normal" title="ログアウト">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="toLoginVCAfterLogout:" destination="3Rq-05-XUD" eventType="touchUpInside" id="lIb-ND-h1X"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnH-42-SY4">
                                         <rect key="frame" x="0.0" y="60" width="374" height="40"/>
@@ -736,6 +780,9 @@
                                         <state key="normal" title="ログイン">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="toLoginVC:" destination="3Rq-05-XUD" eventType="touchUpInside" id="80S-4r-yWp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4E-Dq-fsp">
                                         <rect key="frame" x="0.0" y="120" width="374" height="40"/>
@@ -747,6 +794,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="toPrivacyPolicyVC:" destination="3Rq-05-XUD" eventType="touchUpInside" id="3mY-wc-flt"/>
                                             <segue destination="32Y-Hh-wFc" kind="show" id="A2r-vv-mdk"/>
                                         </connections>
                                     </button>
@@ -776,10 +824,10 @@
             </objects>
             <point key="canvasLocation" x="1958" y="1564"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="USV-dZ-CHi">
             <objects>
-                <viewController id="iSa-II-fDl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iSa-II-fDl" customClass="LoginViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wiR-5g-CXr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -791,10 +839,10 @@
             </objects>
             <point key="canvasLocation" x="1958" y="2310"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="EQi-as-dY5">
             <objects>
-                <viewController id="UTm-TJ-8et" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UTm-TJ-8et" customClass="RegisterViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yWp-z9-SE7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -806,10 +854,10 @@
             </objects>
             <point key="canvasLocation" x="2793" y="2310"/>
         </scene>
-        <!--View Controller-->
+        <!--Book List View Controller-->
         <scene sceneID="ax3-HN-RpF">
             <objects>
-                <viewController id="Zxu-4H-szM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zxu-4H-szM" customClass="BookListViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bGG-Qk-Rho">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -819,7 +867,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Xql-Fg-G1R">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VisiterBookTableViewCell" rowHeight="60" id="Xql-Fg-G1R" customClass="VisiterBookTableViewCell" customModule="VisitorBook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xql-Fg-G1R" id="PID-xI-m27">
@@ -840,6 +888,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="Epg-PP-Q4X" secondAttribute="bottom" id="wcl-kt-Lda"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="Epg-PP-Q4X" id="srP-32-eEM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -848,15 +899,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="0vt-hk-gOG"/>
+                    <connections>
+                        <outlet property="tableView" destination="VIF-WR-Nwh" id="K7n-o3-XCM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pek-e6-AgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="851.78571428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Option View Controller-->
         <scene sceneID="KmU-s5-c1f">
             <objects>
-                <viewController id="CZo-nO-LNi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectOptionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CZo-nO-LNi" customClass="SelectOptionViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Amt-yW-g8t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -935,7 +989,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="128.5" id="jaQ-eT-Q9v"/>
                                                                 </constraints>
-                                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -969,6 +1023,9 @@
                                                         <state key="normal" title="参列者を確認する">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="toConfirmAttendeeVC:" destination="CZo-nO-LNi" eventType="touchUpInside" id="tzn-Vm-6ZB"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ls-dk-6Uh">
                                                         <rect key="frame" x="0.0" y="48" width="354" height="40"/>
@@ -979,6 +1036,9 @@
                                                         <state key="normal" title="芳名録を削除する">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="deleteBook:" destination="CZo-nO-LNi" eventType="touchUpInside" id="LWv-rc-4bb"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -1016,15 +1076,20 @@
                             <constraint firstItem="FkK-iO-Lj1" firstAttribute="top" secondItem="Amt-yW-g8t" secondAttribute="top" id="gGt-a7-9hL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chiefMournerNameLabel" destination="auv-QM-JKl" id="dHD-gc-YLs"/>
+                        <outlet property="deceasedNameLabel" destination="mTb-BA-Lu8" id="4Uy-6Q-BNR"/>
+                        <outlet property="decriptionTextView" destination="RXl-Aw-4Ru" id="19p-v7-Em1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4m-Vs-kRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2792.753623188406" y="851.78571428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm Attendee View Controller-->
         <scene sceneID="B36-pb-aeu">
             <objects>
-                <viewController id="FYS-QS-HNh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmAttendeeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FYS-QS-HNh" customClass="ConfirmAttendeeViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="axY-0R-jGh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1034,13 +1099,30 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="gSX-bZ-S4j">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VisiterBookTableViewCell" rowHeight="60" id="gSX-bZ-S4j" customClass="VisiterBookTableViewCell" customModule="VisitorBook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gSX-bZ-S4j" id="oQI-au-jD4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大阪太郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Fca-Bt-zHe">
+                                                    <rect key="frame" x="20" y="11" width="374" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Fca-Bt-zHe" secondAttribute="bottom" id="Mhg-BU-EUY"/>
+                                                <constraint firstItem="Fca-Bt-zHe" firstAttribute="leading" secondItem="oQI-au-jD4" secondAttribute="leadingMargin" id="ija-u0-twu"/>
+                                                <constraint firstItem="Fca-Bt-zHe" firstAttribute="top" secondItem="oQI-au-jD4" secondAttribute="topMargin" id="xPS-m8-PRN"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Fca-Bt-zHe" secondAttribute="trailing" id="yXh-PK-crt"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="Fca-Bt-zHe" id="O6C-lZ-Qhv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1048,6 +1130,9 @@
                         <viewLayoutGuide key="safeArea" id="gGB-hR-hXJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="bgn-PN-iVc" id="0u6-JO-COm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLb-Qf-Nwj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1069,20 +1154,195 @@
             </objects>
             <point key="canvasLocation" x="2794" y="1564"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Attendee View Controller-->
         <scene sceneID="wKB-nJ-o6d">
             <objects>
-                <viewController id="hSz-hE-MMr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailAttendeeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hSz-hE-MMr" customClass="DetailAttendeeViewController" customModule="VisitorBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UFW-Nn-HGF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-75-2AZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMR-0f-U2R">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="qKB-T3-yvl">
+                                                <rect key="frame" x="20" y="60" width="374" height="486"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7X4-YT-dqG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="49"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご芳名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVH-p4-4VO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大阪太郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITA-2O-eJD">
+                                                                <rect key="frame" x="0.0" y="28.5" width="69.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ITA-2O-eJD" firstAttribute="leading" secondItem="7X4-YT-dqG" secondAttribute="leading" id="095-d6-ONS"/>
+                                                            <constraint firstAttribute="trailing" secondItem="dVH-p4-4VO" secondAttribute="trailing" id="HIZ-ag-YEZ"/>
+                                                            <constraint firstItem="dVH-p4-4VO" firstAttribute="leading" secondItem="7X4-YT-dqG" secondAttribute="leading" id="LUS-WF-dG6"/>
+                                                            <constraint firstItem="dVH-p4-4VO" firstAttribute="leading" secondItem="7X4-YT-dqG" secondAttribute="leading" id="h3V-FL-0tJ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ITA-2O-eJD" secondAttribute="trailing" id="sC5-4T-u82"/>
+                                                            <constraint firstAttribute="trailing" secondItem="dVH-p4-4VO" secondAttribute="trailing" id="vMu-lj-kDb"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-Wp-awD">
+                                                        <rect key="frame" x="0.0" y="82" width="130" height="49"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話番号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLO-57-zb2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="090-1234-5678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwr-H4-0Jr">
+                                                                <rect key="frame" x="0.0" y="28.5" width="130" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="gwr-H4-0Jr" secondAttribute="trailing" id="Aad-vC-QW8"/>
+                                                            <constraint firstAttribute="trailing" secondItem="SLO-57-zb2" secondAttribute="trailing" id="JOw-Kg-uL5"/>
+                                                            <constraint firstAttribute="trailing" secondItem="SLO-57-zb2" secondAttribute="trailing" id="K5w-Bc-9OD"/>
+                                                            <constraint firstItem="gwr-H4-0Jr" firstAttribute="leading" secondItem="Bfl-Wp-awD" secondAttribute="leading" id="LQ4-6D-Ge4"/>
+                                                            <constraint firstItem="SLO-57-zb2" firstAttribute="leading" secondItem="Bfl-Wp-awD" secondAttribute="leading" id="ahl-Su-EUw"/>
+                                                            <constraint firstItem="SLO-57-zb2" firstAttribute="leading" secondItem="Bfl-Wp-awD" secondAttribute="leading" id="xne-aY-46g"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NkI-is-duo">
+                                                        <rect key="frame" x="0.0" y="164" width="139" height="49"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会社名・団体名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZd-1w-2WM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="139" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大阪太郎株式会社" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82W-P0-czs">
+                                                                <rect key="frame" x="0.0" y="28.5" width="139" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="82W-P0-czs" secondAttribute="trailing" id="5mb-QQ-CMd"/>
+                                                            <constraint firstItem="82W-P0-czs" firstAttribute="leading" secondItem="NkI-is-duo" secondAttribute="leading" id="Ib0-PE-yuM"/>
+                                                            <constraint firstItem="ZZd-1w-2WM" firstAttribute="leading" secondItem="NkI-is-duo" secondAttribute="leading" id="SrJ-gS-A89"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZZd-1w-2WM" secondAttribute="trailing" id="Y7N-lg-7Ms"/>
+                                                            <constraint firstItem="ZZd-1w-2WM" firstAttribute="leading" secondItem="NkI-is-duo" secondAttribute="leading" id="atN-cH-Dc2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZZd-1w-2WM" secondAttribute="trailing" id="klA-JC-AzV"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xGH-oH-8pn">
+                                                        <rect key="frame" x="0.0" y="246" width="52" height="49"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご関係" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHo-uU-29h">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="友人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOF-ea-ghe">
+                                                                <rect key="frame" x="0.0" y="28.5" width="52" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="UHo-uU-29h" secondAttribute="trailing" id="DcR-an-Aoi"/>
+                                                            <constraint firstItem="eOF-ea-ghe" firstAttribute="leading" secondItem="xGH-oH-8pn" secondAttribute="leading" id="IfH-Eb-WkH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UHo-uU-29h" secondAttribute="trailing" id="JKb-dE-FgL"/>
+                                                            <constraint firstItem="UHo-uU-29h" firstAttribute="leading" secondItem="xGH-oH-8pn" secondAttribute="leading" id="irf-Y3-Hq4"/>
+                                                            <constraint firstItem="UHo-uU-29h" firstAttribute="leading" secondItem="xGH-oH-8pn" secondAttribute="leading" id="mlY-9c-Xdg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="eOF-ea-ghe" secondAttribute="trailing" id="wmc-Ct-7Um"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y3S-Ca-w4A">
+                                                        <rect key="frame" x="0.0" y="328" width="374" height="158"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIr-bL-XzA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayI-ZL-PfA">
+                                                                <rect key="frame" x="0.0" y="28.5" width="374" height="129.5"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ayI-ZL-PfA" firstAttribute="leading" secondItem="y3S-Ca-w4A" secondAttribute="leading" id="7Lw-q0-2Zg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ayI-ZL-PfA" secondAttribute="trailing" id="CTz-MT-2he"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bIr-bL-XzA" secondAttribute="trailing" id="IuA-xu-d0V"/>
+                                                            <constraint firstItem="bIr-bL-XzA" firstAttribute="leading" secondItem="y3S-Ca-w4A" secondAttribute="leading" id="MLG-G9-W4C"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="y3S-Ca-w4A" secondAttribute="trailing" id="HeB-Kc-yVf"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="qKB-T3-yvl" secondAttribute="bottom" constant="350" id="O1Z-g5-KG8"/>
+                                            <constraint firstItem="qKB-T3-yvl" firstAttribute="leading" secondItem="qMR-0f-U2R" secondAttribute="leading" constant="20" id="mID-YG-f8M"/>
+                                            <constraint firstItem="qKB-T3-yvl" firstAttribute="centerX" secondItem="qMR-0f-U2R" secondAttribute="centerX" id="vcw-Mb-98L"/>
+                                            <constraint firstItem="qKB-T3-yvl" firstAttribute="top" secondItem="qMR-0f-U2R" secondAttribute="top" constant="60" id="z0y-9V-STX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qMR-0f-U2R" firstAttribute="centerX" secondItem="OZj-75-2AZ" secondAttribute="centerX" id="4BQ-qt-Xva"/>
+                                    <constraint firstAttribute="bottom" secondItem="qMR-0f-U2R" secondAttribute="bottom" id="6Js-DT-bvV"/>
+                                    <constraint firstItem="qMR-0f-U2R" firstAttribute="bottom" secondItem="ICN-qr-qTn" secondAttribute="bottom" id="LT7-cg-au0"/>
+                                    <constraint firstAttribute="trailing" secondItem="qMR-0f-U2R" secondAttribute="trailing" id="mSk-D4-Lxr"/>
+                                    <constraint firstItem="qMR-0f-U2R" firstAttribute="top" secondItem="OZj-75-2AZ" secondAttribute="top" id="mY5-Fz-NcI"/>
+                                    <constraint firstItem="qMR-0f-U2R" firstAttribute="leading" secondItem="OZj-75-2AZ" secondAttribute="leading" id="zUY-jG-lS9"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="YTY-xE-y4t"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ICN-qr-qTn"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GlP-OI-Mm3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OZj-75-2AZ" firstAttribute="top" secondItem="UFW-Nn-HGF" secondAttribute="top" id="5hK-pp-R4F"/>
+                            <constraint firstAttribute="bottom" secondItem="OZj-75-2AZ" secondAttribute="bottom" id="OhC-e2-A1G"/>
+                            <constraint firstItem="OZj-75-2AZ" firstAttribute="leading" secondItem="GlP-OI-Mm3" secondAttribute="leading" id="azH-zg-OHp"/>
+                            <constraint firstItem="OZj-75-2AZ" firstAttribute="trailing" secondItem="GlP-OI-Mm3" secondAttribute="trailing" id="gxw-j7-VBn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextView" destination="ayI-ZL-PfA" id="Qpp-5v-x0T"/>
+                        <outlet property="companyLabel" destination="82W-P0-czs" id="VRA-YT-NcR"/>
+                        <outlet property="nameLabel" destination="ITA-2O-eJD" id="T0E-t4-TRg"/>
+                        <outlet property="phoneLabel" destination="gwr-H4-0Jr" id="hlz-tD-GhT"/>
+                        <outlet property="relationshipLabel" destination="eOF-ea-ghe" id="eHK-e1-TJR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5H-Cg-7gO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3652" y="1564"/>
+            <point key="canvasLocation" x="4531.884057971015" y="851.78571428571422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Aq9-vH-FlX">
@@ -1090,6 +1350,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6a7-Cs-8hg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E6O-NI-Y4Y">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
