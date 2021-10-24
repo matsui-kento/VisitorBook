@@ -24,6 +24,7 @@
 		0EF08BFD2725170D00E3898D /* ConfirmAttendeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BFC2725170D00E3898D /* ConfirmAttendeeViewController.swift */; };
 		0EF08BFF27251C5D00E3898D /* DetailAttendeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08BFE27251C5D00E3898D /* DetailAttendeeViewController.swift */; };
 		0EF08C0127251F1E00E3898D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08C0027251F1E00E3898D /* SettingViewController.swift */; };
+		0EF08C0327251FDD00E3898D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08C0227251FDD00E3898D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		0EF08BFC2725170D00E3898D /* ConfirmAttendeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAttendeeViewController.swift; sourceTree = "<group>"; };
 		0EF08BFE27251C5D00E3898D /* DetailAttendeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAttendeeViewController.swift; sourceTree = "<group>"; };
 		0EF08C0027251F1E00E3898D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		0EF08C0227251FDD00E3898D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0EF08BFC2725170D00E3898D /* ConfirmAttendeeViewController.swift */,
 				0EF08BFE27251C5D00E3898D /* DetailAttendeeViewController.swift */,
 				0EF08C0027251F1E00E3898D /* SettingViewController.swift */,
+				0EF08C0227251FDD00E3898D /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				0EF08BD2272276BD00E3898D /* AppDelegate.swift in Sources */,
 				0EF08BFF27251C5D00E3898D /* DetailAttendeeViewController.swift in Sources */,
 				0EF08BF72725118E00E3898D /* CreateBookFormViewController.swift in Sources */,
+				0EF08C0327251FDD00E3898D /* LoginViewController.swift in Sources */,
 				0EF08BEE27244F0900E3898D /* PasswordViewController.swift in Sources */,
 				0EF08BF3272455AC00E3898D /* WriteBookViewController.swift in Sources */,
 				0EF08C0127251F1E00E3898D /* SettingViewController.swift in Sources */,
