@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,7 @@
 		0EF08C0327251FDD00E3898D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08C0227251FDD00E3898D /* LoginViewController.swift */; };
 		0EF08C05272533D600E3898D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08C04272533D600E3898D /* RegisterViewController.swift */; };
 		0EF08C07272535B400E3898D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EF08C06272535B400E3898D /* GoogleService-Info.plist */; };
+		0EF08C0A2725401300E3898D /* Firebase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF08C092725401300E3898D /* Firebase+Extension.swift */; };
 		968D1A7A5BFB864FA71E9EC3 /* Pods_VisitorBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AAFFA25CAE0F3EA2E73AE8 /* Pods_VisitorBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		0EF08C0227251FDD00E3898D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0EF08C04272533D600E3898D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0EF08C06272535B400E3898D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0EF08C092725401300E3898D /* Firebase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Extension.swift"; sourceTree = "<group>"; };
 		DEA59FCA27CD69E2B72B890E /* Pods-VisitorBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisitorBook.release.xcconfig"; path = "Target Support Files/Pods-VisitorBook/Pods-VisitorBook.release.xcconfig"; sourceTree = "<group>"; };
 		E2AAFFA25CAE0F3EA2E73AE8 /* Pods_VisitorBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisitorBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 		0EF08BD0272276BD00E3898D /* VisitorBook */ = {
 			isa = PBXGroup;
 			children = (
+				0EF08C0827253FFE00E3898D /* Extension */,
 				0EF08BEA27244C9500E3898D /* Cells */,
 				0EF08BE627244B9D00E3898D /* Models */,
 				0EF08BE727244BA400E3898D /* ViewModels */,
@@ -148,6 +151,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		0EF08C0827253FFE00E3898D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0EF08C092725401300E3898D /* Firebase+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D2C023F3992596CA609AB4FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +173,6 @@
 				0EC07A3783380B6D80BD47CD /* Pods-VisitorBook.debug.xcconfig */,
 				DEA59FCA27CD69E2B72B890E /* Pods-VisitorBook.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -313,6 +323,7 @@
 				0EF08BE927244BE600E3898D /* SearchBookViewController.swift in Sources */,
 				0EF08C05272533D600E3898D /* RegisterViewController.swift in Sources */,
 				0EF08BFB2725156A00E3898D /* SelectOptionViewController.swift in Sources */,
+				0EF08C0A2725401300E3898D /* Firebase+Extension.swift in Sources */,
 				0EF08BFD2725170D00E3898D /* ConfirmAttendeeViewController.swift in Sources */,
 				0EF08BF5272510E500E3898D /* CreateDescriptionViewController.swift in Sources */,
 				0EF08BF92725132400E3898D /* BookListViewController.swift in Sources */,
